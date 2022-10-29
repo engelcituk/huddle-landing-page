@@ -4,6 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    /* outline: 1px solid red; */
 }
 
 :root{
@@ -21,4 +22,77 @@
 
 body{
     font-family: var(--font-body);
+}
+
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: var(--padding-container);
+}
+
+.hero{
+    min-height: 100vh;
+    position: relative; /*para posicionar las waves como absolutos*/
+}
+
+.hero__nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 0 3rem;
+}
+
+.hero__logo{
+    width: 45%;
+    max-width: 160%;
+}
+
+.hero__huddle{
+    width: 100%;
+    display: block; /*la imagen dejan un margen abajo, con el display block elimino ese marge*/
+}
+
+.hero__cta{
+    color: var(--light-pink);
+    border: 2px solid;
+    padding: .3rem 1rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    box-shadow:0 0 1px hsla(192, 100%, 9%, .5);
+}
+
+.hero__main{
+    text-align: center;
+    color: var(--very-dark-cyan);
+}
+
+.hero__texts{
+    display: grid;
+    gap: 1rem;
+}
+
+.hero__title{
+    font-family: var(--font-headings);
+}
+
+.hero__paragraph{
+    width: 90%;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+/*un elemento a es inline, al ponerle inline block hace que se comporte como bloque*/
+.cta{
+    display: inline-block;
+    background-color: var(--pink);
+    color: #fff;
+    text-decoration: none;
+    justify-self: center;
+    padding: 1rem 1.8rem;
+    border-radius: 2rem;
+    margin-block-start: 1rem;
+    font-weight: 600;
+    box-shadow: -5px 8px 16px -10px hsla(192, 100%, 9%, .5);
 }
