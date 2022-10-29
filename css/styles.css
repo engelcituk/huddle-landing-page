@@ -18,6 +18,7 @@
     --font-headings: 'Poppins', sans-serif;
 
     --padding-container: 4rem 0;
+
 }
 
 body{
@@ -35,6 +36,8 @@ body{
 .hero{
     min-height: 100vh;
     position: relative; /*para posicionar las waves como absolutos*/
+    --wave-bottom: url('../images/bg-section-bottom-mobile-1.svg');
+    --wave-top: url('../images/bg-section-top-mobile-1.svg');
 }
 
 .hero__nav{
@@ -51,7 +54,7 @@ body{
 
 .hero__huddle{
     width: 100%;
-    display: block; /*la imagen dejan un margen abajo, con el display block elimino ese marge*/
+    display: block; /*la imagen dejan un margen abajo, con el display block elimino ese margen*/
 }
 
 .hero__cta{
@@ -95,4 +98,60 @@ body{
     margin-block-start: 1rem;
     font-weight: 600;
     box-shadow: -5px 8px 16px -10px hsla(192, 100%, 9%, .5);
+}
+
+.hero__picture{
+    margin-top: 5rem;
+}
+
+.hero__img{
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto; /*centrar img en su contenedor*/
+    display: block; /*la imagen dejan un margen abajo, con el display block elimino ese margen*/
+}
+
+.hero__numbers{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.hero__item{
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.hero__number{
+    font-size: 3.5rem;
+}
+
+.hero__community{
+    text-align: center;
+}
+
+.hero__icon{
+    display: block;
+}
+
+.wave{
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: 100% 100px;
+}
+
+.wave--bottom{
+    left: 0;
+    bottom: 0;
+    background-image: var(--wave-bottom);
+}
+
+.wave--top{
+    left: 0;
+    top: 0;
+    background-image: var(--wave-top);
 }
