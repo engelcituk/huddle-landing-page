@@ -35,9 +35,8 @@ body{
 
 .hero{
     min-height: 100vh;
-    position: relative; /*para posicionar las waves como absolutos*/
-    --wave-bottom: url('../images/bg-section-bottom-mobile-1.svg');
-    --wave-top: url('../images/bg-section-top-mobile-1.svg');
+    position: relative; /*para posicionar las waves como absolutos*/    
+    --wave-bottom: url('../images/bg-section-top-mobile-1.svg');
 }
 
 .hero__nav{
@@ -154,4 +153,49 @@ body{
     left: 0;
     top: 0;
     background-image: var(--wave-top);
+}
+/* SECTION */
+.section{
+    background-color: var(--very-pale-blue);
+    --padding-container: 7rem 0;
+}
+.section--white{
+    --padding-container: 13rem 0;
+    position: relative;
+    background-color: #fff;
+    --wave-top: url('../images/bg-section-bottom-mobile-1.svg');
+    --wave-bottom: url('../images/bg-section-top-mobile-1.svg');
+}
+
+.section__container{
+    display: flex;
+    flex-direction: column;
+}
+.section__img{
+    width: 100%;
+    max-width: 350px;
+    display: block; /*la imagen dejan un margen abajo, con el display block elimino ese margen*/
+    margin: 0 auto; /*centrar img en su contenedor, para que cuando crezca se centre*/
+}
+
+.section__texts{
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.subtitle{
+   margin-bottom: 1rem;
+   font-family: var(--font-headings);
+}
+
+.question{
+    position: relative;
+    text-align: center;
+    --wave-top: url('../images/bg-section-bottom-mobile-2.svg');
+    --wave-bottom: url('../images/bg-footer-top-mobile.svg');
+    --padding-container: 12rem 0 13rem
+}
+.footer{
+    color: #fff;
+    background-color: var(--very-dark-cyan);
 }
