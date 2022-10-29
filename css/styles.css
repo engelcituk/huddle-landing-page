@@ -247,3 +247,39 @@ body{
     font-weight: 600;
     margin-left: auto;
 }
+
+.footer__contact{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: 1rem;
+    align-items: center;
+}
+
+.footer__contact--email{
+    margin: 1rem 0 3rem;
+}
+.footer__contact::after{
+    content: 'Phone: +1-543-123-4567';
+}
+
+.footer__contact--email::after{
+    content: 'example@huddle.com';
+}
+
+.footer__social{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 40px;
+    gap: 1rem;
+    /* align-items: center; */
+}
+
+.footer__icon{
+    display: block;
+    width: 100%;
+}
+
+.footer__link{
+    text-decoration: none;
+}
